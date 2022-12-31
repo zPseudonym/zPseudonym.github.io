@@ -1,0 +1,1 @@
+Documentation on this project can be found on my [website](https://zpseudonym.github.io/projects/2022/11/18/personal-website-with-hugo-and-github-pages/).

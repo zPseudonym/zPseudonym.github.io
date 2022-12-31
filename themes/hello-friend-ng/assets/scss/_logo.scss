@@ -1,0 +1,61 @@
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-display: auto;
+  font-family: monospace, monospace;
+
+  @media (prefers-color-scheme: dark) {
+    color: $dark-color;
+  }
+
+  @media (prefers-color-scheme: light) {
+    color: $light-color;
+  }
+
+  [data-theme=dark] & {
+    color: $dark-color;
+  }
+
+  [data-theme=light] & {
+    color: $light-color;
+  }
+
+  img {
+    height: 44px;
+  }
+
+  &__mark {
+    margin-right: 5px;
+    color: #755CC5;
+  }
+
+  &__text {
+    font-size: 1.125rem;
+    color: inherit;
+  }
+
+  &__cursor {
+    display: inline-block;
+    width: 10px;
+    height: 1rem;
+    background: #755CC5;
+    margin-left: 5px;
+    border-radius: 1px;
+    animation: cursor 1s infinite;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &__cursor {
+        animation: none;
+    }
+  }
+
+}
+
+@keyframes cursor {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}

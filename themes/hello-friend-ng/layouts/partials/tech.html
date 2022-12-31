@@ -1,0 +1,8 @@
+{{ with . }}
+    <p>
+        <i style="font-size:14px">Technologies used:</i>
+        {{ range . -}}
+            <span class="tech"><a href="{{ "tech/" | absLangURL }}{{ . | urlize }}/">{{.}}</a></span>
+        {{ end }}
+    </p>
+{{ end }}
